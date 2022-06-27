@@ -1,0 +1,136 @@
+/* Body style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f9fd;
+}
+
+/* Section style */
+
+.calc-parent {
+  flex: 0 0 95%;
+  padding: 20px 0px 20px 230px;
+}
+
+/* Input style */
+
+.answerdisplay {
+  width: 77%;
+  font-size: 7rem;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: solid 2px #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Keys style */
+
+.keyspace {
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.5s linear;
+}
+
+button {
+  flex: 0 0 25%;
+  border: 1px solid black;
+  padding: 0.25rem 0;
+  margin: 5px;
+  transition: all 2s ease;
+  border-radius: 50px;
+}
+
+button:hover {
+  transition: 0.7s;
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px #000000;
+  transform: scale(1.02);
+}
+
+.operation-btn {
+  background: #9dd6df;
+  color: white;
+}
+.num-btn {
+  background: #ffe7bf;
+}
+
+.btn,
+.equal-key,
+.clearvalue {
+  font-size: 4rem;
+}
+.equal-key {
+  background: #a084cf;
+}
+.clearvalue {
+  background: #ff9d64;
+}
+
+/*Media query for screen width max=400px*/
+
+@media screen and (max-width: 400px) {
+  .calc-parent {
+    padding: 0%;
+    margin: 10px;
+    border: #000 solid 1px;
+    background-color: #383838;
+    border-radius: 20px;
+  }
+
+  .inputarea {
+    padding: 10px;
+  }
+
+  .answerdisplay {
+    width: 100%;
+    font-size: 5rem;
+  }
+
+  .keyspace {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .btn {
+    width: 20px;
+    font-size: 2rem;
+    margin: 5px;
+    border: #000 solid 1px;
+    border-radius: 20px;
+  }
+
+  .equal-key {
+    width: 20px;
+    font-size: 2rem;
+    margin: 5px;
+    border: #000 solid 1px;
+    border-radius: 20px;
+  }
+
+  .clearvalue {
+    width: 20px;
+    font-size: 2rem;
+    margin: 5px;
+    border: #000 solid 1px;
+    border-radius: 20px;
+  }
+
+  button:hover {
+    box-shadow: 0 0 0 2px #ffffff;
+    transition: 0.7s;
+    outline-color: transparent;
+    outline-style: solid;
+  }
+}
